@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Idysseus — Services &amp; Pricing</title>
+<style>
+body{margin:0;background:#0A1124;color:#fff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}
+.wrap{max-width:960px;margin:0 auto}
+a{color:#22C9D9}
+.btn{background:#22C9D9;color:#06202a;padding:13px 30px;border-radius:8px;font-size:15px;font-weight:500;display:inline-block;text-decoration:none}
+.btn2{background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.25);padding:12px 28px;border-radius:8px;font-size:15px;font-weight:500;display:inline-block;text-decoration:none}
+.card{background:#0d1530;border:0.5px solid rgba(255,255,255,0.08);border-radius:12px;padding:24px;display:flex;flex-direction:column}
+.card.hot{border:1px solid rgba(34,201,217,0.55)}
+.tag{background:rgba(34,201,217,0.12);color:#7fdfe9;font-size:11px;padding:4px 9px;border-radius:6px;display:inline-block}
+.feat{color:#9fb0c8;font-size:12.5px;line-height:1.6;margin:0;padding-left:18px}
+.feat li{margin-bottom:6px}
+input[type=range]{width:100%;accent-color:#22C9D9}
+.usecase{background:#0d1530;border-radius:10px;padding:18px}
+@media(max-width:820px){.grid3{grid-template-columns:1fr !important}.grid2{grid-template-columns:1fr !important}}
+</style>
+</head><body><div class="wrap">
+
+<!-- NAV -->
+<div style="display:flex;align-items:center;justify-content:space-between;padding:16px 24px;border-bottom:0.5px solid rgba(255,255,255,0.06)"><a href="index.html" style="display:flex;align-items:center;gap:9px;text-decoration:none"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22C9D9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px;flex-shrink:0"><path d="M6.5 18.4A12 12 0 0 1 6 14a6 6 0 0 1 9-5.2"/><path d="M9 21a10 10 0 0 1-1-4 4 4 0 0 1 8 0c0 1.3.2 2.6.5 3.8"/><path d="M12 14c0 3 .5 5.5 1.5 7.5"/><path d="M3 12a9 9 0 0 1 15-6.7"/></svg><span style="line-height:1.05"><span style="display:block;color:#fff;font-size:15px;font-weight:500;letter-spacing:1px">IDYSSEUS</span><span style="display:block;color:#22C9D9;font-size:8.5px;letter-spacing:2px">IDENTITY FIRST</span></span></a><div style="display:flex;align-items:center;gap:22px;font-size:13px"><a href="index.html" style="color:#9fb0c8;text-decoration:none">Platform</a><a href="company.html" style="color:#9fb0c8;text-decoration:none">Company</a><a href="services.html" style="color:#fff;border-bottom:2px solid #22C9D9;padding-bottom:3px;text-decoration:none">Services &amp; Pricing</a><a href="resources.html" style="color:#9fb0c8;text-decoration:none">Resources</a><a class="btn" style="padding:7px 14px;font-size:13px" href="demo.html">Request a Demo</a></div></div>
+
+<!-- HERO -->
+<div style="padding:54px 28px 38px"><div style="color:#22C9D9;font-size:11px;letter-spacing:2.5px;margin-bottom:14px">SERVICES &amp; PRICING</div>
+<div style="color:#fff;font-size:34px;font-weight:600;line-height:1.2;max-width:560px">Simple pricing. The whole platform, every tier.</div>
+<div style="color:#9fb0c8;font-size:14.5px;line-height:1.65;max-width:540px;margin:16px 0 24px">One annual per-identity subscription includes everything &mdash; Identity Visibility, Identity Intelligence, Access Review, and the no-code identity pipeline. Tiers differ by deployment and resilience, not by features held back.</div>
+<div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="demo.html">Book a Demo &rarr;</a><a class="btn2" href="#plans">Choose plan &darr;</a></div></div>
+
+<!-- CALCULATOR + PLANS -->
+<div id="plans" style="padding:10px 28px 8px">
+<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-bottom:10px">
+<div style="font-size:14px;color:#cdd9ea">Workforce identities (employees, contractors, 3rd-party vendors): <span id="qtyLabel" style="color:#22C9D9;font-weight:700;font-size:16px">500</span></div>
+<div style="font-size:12px;color:#7e93b3">Billed annually &middot; priced on workforce identities only &middot; single-instance pilot options on request</div>
+</div>
+<input type="range" id="qty" min="100" max="3000" step="50" value="500" oninput="recalc()">
+<div style="display:flex;justify-content:space-between;color:#6b80a0;font-size:11px;margin-top:2px"><span>100</span><span>500</span><span>1,000</span><span>2,000</span><span>3,000+</span></div>
+</div>
+
+<div class="grid3" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:18px 28px 8px;max-width:760px;margin:0 auto">
+
+<div class="card hot"><div style="display:flex;justify-content:space-between;align-items:center"><div style="font-size:18px;font-weight:600">Platform</div><span class="tag">High availability</span></div>
+<div style="color:#22C9D9;font-size:26px;font-weight:700;margin-top:6px">$70<span style="font-size:13px;color:#9fb0c8;font-weight:400"> /workforce identity /year</span></div>
+<div style="color:#7e93b3;font-size:12px;margin-top:2px"><span id="tot70">$35,000</span> /year &middot; <span id="mo70">~$5.83</span> /identity /mo</div>
+<div style="color:#9fb0c8;font-size:12.5px;font-style:italic;line-height:1.5;margin:14px 0">Everything included, deployed for resilience &mdash; because visibility is operational, not optional.</div>
+<a class="btn" style="text-align:center;font-size:13.5px;padding:10px 0" href="demo.html">Select Plan</a>
+<div style="border-top:0.5px solid rgba(255,255,255,0.08);margin:16px 0 10px"></div>
+<ul class="feat"><li>Full platform: Identity Visibility, Identity Intelligence &amp; Access Review</li><li>No-code identity pipeline &amp; data gateway &mdash; raw data never leaves your source</li><li>Agent-based, uni-directional data plane &mdash; read-only by design</li><li>Identity graph: every user, group, role, resource &amp; access path</li><li><b style="color:#cdd9ea">Non-human identities included</b> &mdash; service accounts and machine identities discovered at no per-identity charge</li><li>High-availability architecture &middot; <b style="color:#cdd9ea">99.99% availability SLA</b></li><li>Standard support (8&times;5, M&ndash;F)</li><li>Priority onboarding assistance</li></ul></div>
+
+<div class="card"><div style="font-size:18px;font-weight:600">Enterprise</div>
+<div style="color:#22C9D9;font-size:26px;font-weight:700;margin-top:6px">Custom</div>
+<div style="color:#7e93b3;font-size:12px;margin-top:2px">tailored to your environment</div>
+<div style="color:#9fb0c8;font-size:12.5px;font-style:italic;line-height:1.5;margin:14px 0">Global organizations with complex identity environments &mdash; including self-hosted virtual appliance deployment.</div>
+<a class="btn2" style="text-align:center;font-size:13.5px;padding:10px 0" href="demo.html">Request a Quote</a>
+<div style="border-top:0.5px solid rgba(255,255,255,0.08);margin:16px 0 10px"></div>
+<div style="color:#cdd9ea;font-size:12px;font-style:italic;margin-bottom:8px">everything in Platform, plus:</div>
+<ul class="feat"><li><b style="color:#cdd9ea">Virtual appliance deployment</b> &mdash; run the platform self-hosted, on-prem or in your cloud (custom pricing)</li><li>Advanced support with a designated representative</li><li>Custom SLAs &amp; deployment options</li><li>Volume licensing across business units</li><li>Multi-environment &amp; M&amp;A onboarding programs</li></ul></div>
+</div>
+
+<!-- USE CASES -->
+<div style="padding:36px 28px 8px"><div style="text-align:center;color:#22C9D9;font-size:11px;letter-spacing:2.5px;margin-bottom:6px">WHAT TEAMS USE IDYSSEUS FOR</div>
+<div style="text-align:center;color:#9fb0c8;font-size:12.5px;max-width:520px;margin:0 auto 20px;line-height:1.55">Five outcomes, one platform &mdash; each mapped to the team that owns it.</div>
+<div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div class="usecase"><div style="color:#22C9D9;font-size:11px;letter-spacing:1.5px;margin-bottom:6px">CISO</div><div style="color:#fff;font-size:14.5px;font-weight:600">Blind-spot discovery</div><div style="color:#9fb0c8;font-size:12.5px;line-height:1.55;margin-top:6px">Map the identities, systems, and access paths your governance has never seen &mdash; the denominator no IGA can give you.</div></div>
+<div class="usecase"><div style="color:#22C9D9;font-size:11px;letter-spacing:1.5px;margin-bottom:6px">CISO</div><div style="color:#fff;font-size:14.5px;font-weight:600">Identity assurance &amp; user risk</div><div style="color:#9fb0c8;font-size:12.5px;line-height:1.55;margin-top:6px">Every identity discovered, attributed to a trusted source, and continuously verified &mdash; a posture answer your IGA was never built to give.</div></div>
+<div class="usecase"><div style="color:#22C9D9;font-size:11px;letter-spacing:1.5px;margin-bottom:6px">IDENTITY &amp; ZERO-TRUST TEAMS</div><div style="color:#fff;font-size:14.5px;font-weight:600">Excessive-entitlement intelligence</div><div style="color:#9fb0c8;font-size:12.5px;line-height:1.55;margin-top:6px">Continuous detection of bloated, over-provisioned access &mdash; out-of-the-box rules plus your own &mdash; so latent risk is found before an attacker finds it.</div></div>
+<div class="usecase"><div style="color:#22C9D9;font-size:11px;letter-spacing:1.5px;margin-bottom:6px">SOC / INCIDENT RESPONSE</div><div style="color:#fff;font-size:14.5px;font-weight:600">Informed blast radius</div><div style="color:#9fb0c8;font-size:12.5px;line-height:1.55;margin-top:6px">When your tools flag a compromised identity, instantly see every asset and resource it can reach &mdash; containment and forensics start scoped, not blind.</div></div>
+<div class="usecase" style="grid-column:1 / -1"><div style="color:#22C9D9;font-size:11px;letter-spacing:1.5px;margin-bottom:6px">GRC / INTERNAL AUDIT</div><div style="color:#fff;font-size:14.5px;font-weight:600">Audit completeness</div><div style="color:#9fb0c8;font-size:12.5px;line-height:1.55;margin-top:6px">Prove what's governed, see what isn't, and produce clean, defensible evidence on demand &mdash; turning audit fire-drills into a routine.</div></div>
+</div></div>
+
+<!-- SERVICES / ADD-ONS -->
+<div style="padding:34px 28px 8px"><div style="text-align:center;color:#22C9D9;font-size:11px;letter-spacing:2.5px;margin-bottom:6px">PROFESSIONAL SERVICES</div>
+<div style="text-align:center;color:#9fb0c8;font-size:12.5px;max-width:520px;margin:0 auto 20px;line-height:1.55">Remote-delivered, fixed-scope services to get you to full visibility fast.</div>
+<div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+
+<div class="card" style="border:1px solid rgba(34,201,217,0.35)"><div style="display:flex;justify-content:space-between;align-items:center"><div style="font-size:16px;font-weight:600">Identity Architecture Assessment</div><span class="tag">Fixed fee</span></div>
+<div style="color:#22C9D9;font-size:22px;font-weight:700;margin-top:6px">$12,000</div>
+<div style="color:#9fb0c8;font-size:12.5px;line-height:1.6;margin-top:10px">A two-week, remote engagement that maps your identity current state end to end: every identity source and system, what your IGA actually covers, where the blind spots are, and a prioritized roadmap to close them.</div>
+<ul class="feat" style="margin-top:12px"><li>Current-state identity architecture diagram</li><li>IGA coverage map: governed vs. visible vs. dark</li><li>Blind-spot findings: ungoverned systems &amp; coverage gaps</li><li>Prioritized onboarding roadmap</li></ul></div>
+
+<div class="card"><div style="font-size:16px;font-weight:600">Onboarding &amp; Enablement</div>
+<ul class="feat" style="margin-top:12px"><li><b style="color:#cdd9ea">Connector Onboarding Pack &mdash; $7,200.</b> Four connectors onboarded and operationalized (e.g., Azure OOTB, GitHub OOTB, two no-code identity pipelines). 24 hours, remote.</li><li><b style="color:#cdd9ea">Customization hours &mdash; $300/hr.</b> Remote professional services in 8-hour blocks.</li><li><b style="color:#cdd9ea">End-user training &mdash; $250/session.</b> Virtual, role-based.</li></ul></div>
+</div></div>
+
+<!-- POC STRIP -->
+<div style="margin:36px 28px 0;background:#0d1530;border:0.5px solid rgba(34,201,217,0.3);border-radius:12px;padding:22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+<div><div style="color:#fff;font-size:15.5px;font-weight:600">Not ready for a plan? Start with the $100 POC.</div><div style="color:#9fb0c8;font-size:12.5px;margin-top:4px">5-day hands-on proof of concept &middot; your data stays in your environment.</div></div>
+<a class="btn" style="padding:10px 22px;font-size:13.5px" href="demo.html">Request a Demo</a></div>
+
+<!-- CTA -->
+<div style="padding:44px 28px;text-align:center"><div style="color:#fff;font-size:19px;font-weight:500">See what you&#39;ve been missing.</div><div style="margin-top:20px"><a class="btn" href="demo.html">Request a Demo</a></div></div>
+
+<!-- FOOTER -->
+<div style="padding:16px 24px;border-top:0.5px solid rgba(255,255,255,0.06);display:flex;justify-content:space-between;align-items:center"><span style="color:#6b80a0;font-size:11px">IDYSSEUS</span><span style="color:#6b80a0;font-size:11px">&copy; 2026 Idysseus. All rights reserved.</span><span style="color:#6b80a0;font-size:11px">Privacy &middot; Terms</span></div>
+
+</div>
+<script>
+function fmt(n){return '$'+n.toLocaleString('en-US')}
+function recalc(){
+var q=parseInt(document.getElementById('qty').value,10);
+document.getElementById('qtyLabel').textContent=q.toLocaleString('en-US');
+document.getElementById('tot70').textContent=fmt(q*70);
+document.getElementById('mo70').textContent='~$'+(70/12).toFixed(2);
+}
+recalc();
+</script>
+</body></html>
